@@ -11,7 +11,7 @@ test('Add To Cart', async ({ page }) => {
     for(const data of testdata){
     await loginPage.login(data.username,data.password)
     await homePage.addRemove()
-    await logoutPage.logout()
+    //await logoutPage.logout()
     }
     await page.close()
   
